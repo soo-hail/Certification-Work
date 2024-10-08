@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* TO INCLUDE CONTENT, PADDING, BORDER WITHIN GIVEN HEIGHT AND WIDTH OF AN ELEMENT.*/
+}
+
+body{
+    background-color: white;
+}
+
+.heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.my-container{
+    margin-top: 20px;
+    padding: 20px 3%;
+}
+
+.accordion-body a{
+    padding: 8px 25px;
+    margin-top: 15px;
+
+}

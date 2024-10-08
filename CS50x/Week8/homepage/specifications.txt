@@ -1,0 +1,24 @@
+HTML Tags:
+1. <div> - Defines a division or section in an HTML document.
+2. <nav> - Defines a set of navigation links.
+3. <ul> - Defines an unordered list.
+4. <li> - Defines a list item.
+5. <a> - Defines a hyperlink.
+6. <span> - Defines a section in a document for inline elements.
+7. <h2> - Defines HTML headings, level 2.
+8. <i> - Defines icon.
+9. <form> - Defines an HTML form for user input.
+10. <input> - Defines an input control.
+11. <button> - Defines a clickable button.
+
+
+CSS Properties:
+1. font-family - Specifies the font of an element.
+2. background-color - Sets the background color of an element.
+3. margin - Sets the margin area on all four sides of an element.
+4. padding - Sets the padding area on all four sides of an element.
+5. border - Sets the border around an element.
+
+JavaScript and Bootstrap Usage:
+- JavaScript: used to insert html in DOM.
+- Bootstrap: used in "projects.html" to design 'Accordion' for storing project details.

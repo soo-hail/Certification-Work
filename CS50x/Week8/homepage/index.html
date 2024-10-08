@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d279b7b086.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-text">
+                    <h1>Hey, I'm <span>Mohammed Sohail</span></h1>
+                    <p>Python Developer & AI/ML Engineer</p>
+                </div>
+
+                <div id="about">
+                    <div id="tabs">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div id= "skills" class="tab-containts active-tab">
+                        <ul>
+                            <li><span>Artificial Intelligence <br></span>Machine Learning, Deep Learning</li>
+                            <li><span>Programming <br> </span>DSA, Python, Java, Problem-Solving</li>
+                            <li><span>Mathematics <br> </span>Linear Algebra, Statistics</li>
+                            <li><span>Web Devlopment <br></span>HTML, CSS, JS, SQL, Bootstrap, Flask Micro-framework</li>
+                            <li><span>Version Control <br></span>With Git & GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div id="experience" class="tab-containts">
+                        <ul>
+                            <li><span>No Experience <br></span></li>
+                        </ul>
+                    </div>
+
+                    <div id="education" class="tab-containts">
+                        <ul>
+                            <li><span>2025<br></span>BCA from Presidency College, Bagalore</li>
+                            <li><span>2024<br></span>CS50ai from Harvard University(online)</li>
+                            <li><span>2024<br></span>CS50x from Harvard University(online)</li>
+                            <li><span>2022<br> </span>PCMC from Deeksha, Bangalore </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h2 class="sub-title">Services</h2>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Programming</h2> <br>
+                        <p>L
+                            orem ipsum dolor sit amet consectetur adipisicing elit. Eum ea enim perspiciatis magnam ad obcaecati qui, quam odio labore nesciunt quod in molestiae, reiciendis temporibus aut id fuga ipsa necessitatibus.</p>
+                        <a href="/services.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Analysis and Visualization</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, porro necessitatibus corporis sint rem nisi autem expedita placeat rerum tenetur repellat dignissimos error impedit amet consequuntur aut recusandae deleniti iure!</p>
+                        <a href="/services.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2>Coding Lessons</h2> <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ea consequuntur accusantium cum, iusto pariatur sunt! Iste ex enim mollitia!</p>
+                        <a href="/services.html">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="container">
+                <a href="projects.html" id="projects-heading" target="_blank"><h2 class="sub-title">Projects</h2></a>
+                <div class="projects-list">
+                    <div>
+                        <h2>Medical Image Analysis</h2> <br>
+                        <p>Developed a critical application of artificial intelligence and machine learning in healthcare, aimed at improving the accuracy and efficiency of medical diagnostics and treatment planning. It involves the use of advanced computational techniques to interpret and analyze medical images, such as X-rays, CT scans, MRIs, and ultrasounds.</p>
+                        <a href="/projects.html" target="_blank">Read more</a>
+                    </div>
+
+                    <div>
+                        <h2>Chatbot</h2> <br>
+                        <p>Developed a Chatbot, fine-tuned on interior design, is a specialized AI application that enhances user experience and support in the design domain. It employs advanced NLP techniques to provide personalized design recommendations, answer queries, and assist with space planning. This chatbot can offer style suggestions, furniture placement advice, and color coordination tips, tailored to individual preferences.</p>
+                        <a href="/projects.html" target="_blank">Read more</a>
+                    </div>
+
+                    <div>
+                        <h2>Conway's Game of Life</h2> <br>
+                        <p>Developed a cellular automaton, demonstrating how simple rules can lead to complex behavior. It is a zero-player game, takes place on an infinite, two-dimensional grid of square cells and it generates various interesting patterns from different initial configurations.</p>
+                        <a href="/projects.html" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fa-solid fa-envelope"></i> mohammed01705@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone"></i> +91 934 654 3650</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/sohailmohamm_d/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/soo-hail"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohammed-sohail-14a1a1270/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
+
+                        <a href="cv.html" class="btn" target="_blank">Get CV</a>
+                    </div>
+
+                    <div class="right">
+                        <form action="#">
+                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" autocomplete="off"></textarea>
+                            <input type="submit" value="Submit" class="btn form-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

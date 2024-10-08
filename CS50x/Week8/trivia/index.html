@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            window.onclick = function(){
+                document.getElementById("opt1").onclick = function(){
+                    document.getElementById("status").innerHTML = "Incorrect";
+                    document.getElementById("opt1").style.backgroundColor = "red";
+                }
+
+                document.getElementById("opt2").onclick = function(){
+                    document.getElementById("status").innerHTML = "Correct!";
+                    document.getElementById("opt2").style.backgroundColor = "green";
+                }
+
+                document.getElementById("opt3").onclick = function(){
+                    document.getElementById("status").innerHTML = "Incorrect";
+                    document.getElementById("opt3").style.backgroundColor = "red";
+                }
+
+                document.getElementById("opt4").onclick = function(){
+                    document.getElementById("status").innerHTML = "Incorrect";
+                    document.getElementById("opt4").style.backgroundColor = "red";
+                }
+
+                document.getElementById("submit").onclick = function(){
+                    var ans = document.getElementById("ans").value;
+                    if(ans == "Elon Musk"){
+                        document.getElementById("status2").innerHTML = "Correct!";
+                        document.getElementById("ans").style.backgroundColor = "green";
+                    }
+                    else{
+                        document.getElementById("status2").innerHTML = "Incorrect";
+                        document.getElementById("ans").style.backgroundColor = "red";
+                    }
+                }
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who's the instructor for CS50?</h3>
+                <p id="status"></p>
+                <ul class="options">
+                    <li><button id="opt1">Doug Lloyd</button></li>
+                    <li><button id="opt2">David J. Malan</button></li>
+                    <li><button id="opt3">Brian Yu</button></li>
+                    <li><button id="opt4">Rob Bowden</button></li>
+                </ul>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <p id="status2"></p>
+                <h3>Who is the CEO of Tesla?</h3>
+                <input type="text" id="ans">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>

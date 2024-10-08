@@ -1,0 +1,2 @@
+- I would try to have a regression model with takes in count of all the parameters of the songs
+- Yeah it wont represent the listeners, we shoule have better AI models for this
