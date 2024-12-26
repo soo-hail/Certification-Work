@@ -1,0 +1,20 @@
+1. The home loans department manager provides you with two files (CSV’s) that you are to store securely in a table in SQL. However, the home loans department does not have a database. Which SQL statement creates the database for the home loans department?
+Ans: 
+CREATE DATABASE homeloansDB
+
+2. After creating the database, one of your team members created two empty tables for you to insert data from the respective files. The files have many records. Which SQL statements do this?
+Ans: 
+BULK INSERT train FROM 'D:\train.csv' WITH ( FIRSTROW = 2, -- as 1st one is header FIELDTERMINATOR = ',', --CSV field delimiter ROWTERMINATOR = '\n', --Use to shift the control to next row TABLOCK )          BULK INSERT test FROM 'D:\test.csv' WITH ( FIRSTROW = 2, -- as 1st one is header FIELDTERMINATOR = ',', --CSV field delimiter ROWTERMINATOR = '\n', --Use to shift the control to next row TABLOCK )
+
+3. Your Team Lead asks you to change the data type from integer to string of the Loan_ID column. Which two SQL statements are correct in achieving this?
+Ans: 
+ALTER TABLE train ALTER COLUMN Loan_ID VARCHAR(20);
+ALTER TABLE test ALTER COLUMN Loan_ID VARCHAR(20);
+
+4. The home loans department manager has informed the team that the CoapplicantIncome column is populated with 0 where there isn’t a co-applicant or value is missing. She has asked us to replace the 0’s accordingly. Which SQL statements achieve this?
+Ans:
+UPDATE train SET CoapplicantIncome = NULL where CoapplicantIncome = 0; UPDATE train SET CoapplicantIncome = NULL where CoapplicantIncome = 0;
+
+5. The home loans department manager has informed the team that the LoanAmount column is in thousands. In other words, the data capturers insert a loan amount as 30 instead of 30 000. She has asked us to deal with it accordingly so as to not cause confusion. Which SQL statements are correct?
+Ans: 
+UPDATE train SET LoanAmount = LoanAmount * 1000; UPDATE test SET LoanAmount = LoanAmount * 1000;
